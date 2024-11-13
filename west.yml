@@ -1,0 +1,16 @@
+# SPDX-License-Identifier: Apache-2.0
+# West YAML manifest for Zephyr as Xen fuzzing harness
+
+manifest:
+  self:
+    path: xen-fuzzer-harness
+
+  remotes:
+    - name: xentroops
+      url-base: https://github.com/xen-troops/
+
+  projects:
+    - name: zephyr
+      remote: xentroops
+      revision: xen-fuzzer
+      west-commands: scripts/west-commands.yml
